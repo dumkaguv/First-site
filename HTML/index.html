@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="icon" href="../Logo/logo_16x16.jpg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.4.2/css/all.css"
+    />
+    <title>MyFirstSite</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header__container container">
+      <a class="header__logo-link" href="#">
+        <img src="../Logo/Logo.png" alt="Logo" class="header__logo" />
+      </a>
+      <!-- Header nav -->
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item active">
+            <a href="#"
+              ><i class="fa-solid fa-house fa-xs"></i> Home</a
+            >
+          </li>
+          <li class="header__item info">
+            <a href="#"
+              ><i class="fa-solid fa-lightbulb fa-xs"></i> Information
+              <i class="fa-solid fa-caret-down fa-xs"></i
+            ></a>
+            <ul class="header__dropdown">
+              <li class="header__dropdown-item">
+                <a href="#"
+                  ><i class="fa-solid fa-address-card fa-2xs"></i>&thinsp;
+                  About us</a
+                >
+              </li>
+              <li class="header__dropdown-item">
+                <a href="#"
+                  ><i class="fa-solid fa-address-book fa-xs"></i>&thinsp;
+                  Contacts</a
+                >
+              </li>
+              <li class="header__dropdown-item">
+                <a href="#"
+                  ><i class="fa-solid fa-truck fa-xs"></i>&thinsp;
+                  Delivery</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="header__item pc">
+            <a href="#"
+              ><i class="fa-solid fa-basket-shopping fa-xs"></i>
+              Shopping-basket</a
+            >
+          </li>
+          <li class="header__item mobile">
+            <a href="#"
+              ><i class="fa-solid fa-basket-shopping fa-xs"></i> Basket</a
+            >
+          </li>
+          <li class="header__item">
+            <a href="#"
+              ><i class="fa-solid fa-right-to-bracket fa-xs"></i> Login</a
+            >
+          </li>
+          <li class="header__item pc">
+            <a href="#"
+              ><i class="fa-solid fa-user fa-xs"></i> My profile</a
+            >
+          </li>
+          <li class="header__item mobile profile">
+            <a href="#"><i class="fa-solid fa-user fa-xs"></i> Profile</a>
+          </li>
+        </ul>
+      </nav>
+      <button type="button" class="header__button btn">
+        Buy now!&thinsp;<i class="fa-solid fa-basket-shopping fa-2xs"></i>
+      </button>
+    </header>
+
+    <!-- Catalog -->
+    <section class="catalog container">
+      <div class="dropdown">
+        <button onclick="toggleMenu()" class="catalog__btn btn">
+          <i class="fa-solid fa-bars fa-xs"></i>&thinsp; Catalog
+        </button>
+        <div class="dropdown-content">
+          <ul>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-shirt fa-2xs"></i>&thinsp; Shirts</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-user-tie fa-2xs"></i>&thinsp;
+                Ties</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-hat-cowboy fa-2xs"></i>&thinsp;
+                Hats</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <main class="main">
+      <div class="background__image">
+        <!-- SubHeader -->
+        <section class="subheader__container container">
+          <div class="subheader__text">
+            <h2 class="subheader__subtitle">Items for everyone!</h2>
+            <h1 class="subheader__title">
+              High-quality items at reasonable prices.
+            </h1>
+            <div class="subheader__description">
+              On the website, you can find a variety of products, including
+              clothing, accessories, and footwear, which can be easily
+              ordered with delivery. Each product is presented with a
+              detailed description and high-quality photos.
+            </div>
+          </div>
+
+          <button type="button" class="subheader__btn btn">
+            Buy now!&thinsp;<i
+              class="fa-solid fa-basket-shopping fa-2xs"
+            ></i>
+          </button>
+        </section>
+      </div>
+      <!-- 1st cards section -->
+      <section class="cloth__cards container">
+        <div class="cloth__card__box">
+          <div class="cloth__card__img">
+            <a href="#"
+              ><img src="../Images/card_cloth_1.jpg" alt="Cloth 1"
+            /></a>
+          </div>
+          <div class="cloth__card__text">
+            <h2>Women's jacket</h2>
+            <p>Some additional info</p>
+          </div>
+        </div>
+        <div class="cloth__card__box">
+          <div class="cloth__card__img">
+            <a href="#"
+              ><img src="../Images/card_cloth_2.jpg" alt="Cloth 2"
+            /></a>
+          </div>
+          <div class="cloth__card__text">
+            <h2>Men's jacket</h2>
+            <p>Some additional info</p>
+          </div>
+        </div>
+        <div class="cloth__card__box">
+          <div class="cloth__card__img">
+            <a href="#"
+              ><img src="../Images/card_cloth_3.jpg" alt="Cloth 3"
+            /></a>
+          </div>
+          <div class="cloth__card__text">
+            <h2>Men's coat</h2>
+            <p>Some additional info</p>
+          </div>
+        </div>
+        <div class="cloth__card__box">
+          <div class="cloth__card__img">
+            <a href="#"
+              ><img src="../Images/card_cloth_4.jpg" alt="Cloth 4"
+            /></a>
+          </div>
+          <div class="cloth__card__text">
+            <h2>Men'n shirt</h2>
+            <p>Some additional info</p>
+          </div>
+        </div>
+      </section>
+      <!-- Promotion -->
+      <section class="promotion__background">
+        <div class="promotion__container container">
+          <img
+            src="../Images/MenJacket-Photoroom.png"
+            class="promotion__big__photo"
+            alt="Men's jacket"
+          />
+          <div class="promotion__description">
+            <h1>Best men's jacket!</h1>
+            <br />
+            <h2>
+              Looking for the perfect jacket to elevate your wardrobe?
+              Whether you need something sharp for a night out or durable
+              for the colder months, we’ve got you covered. Our best men's
+              jackets combine style, comfort, and functionality, ensuring
+              you look great while staying warm and protected.
+            </h2>
+            <div class="promotion__price">
+              <span class="promotion__price__actual">$100</span>
+              <span class="promotion__price__old">$150</span>
+            </div>
+            <button type="button" class="promotion__btn btn">
+              Buy now!&thinsp;<i
+                class="fa-solid fa-basket-shopping fa-2xs"
+              ></i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- 2nd cloth cards -->
+      <section class="cloth__cards__subfooter container">
+        <div class="cloth__cards__img cloth__cards__img-1">
+          <div class="cloth__cards__title">
+            <h1>Men's business suit</h1>
+          </div>
+          <div class="cloth__cards__desc">
+            1111111111111111111111111111111111111111
+            <div class="cloth__cards__price">
+              <span class="cloth__cards__actual__price">$111</span>
+              <span class="cloth__cards__price__old">$111</span>
+            </div>
+            <button type="button" class="promotion__btn btn">
+              Buy now!&thinsp;<i
+                class="fa-solid fa-basket-shopping fa-2xs"
+              ></i>
+            </button>
+          </div>
+        </div>
+        <div class="cloth__cards__img cloth__cards__img-2">
+          <div class="cloth__cards__title">
+            <h1>Men's business suit</h1>
+          </div>
+          <div class="cloth__cards__desc">
+            1111111111111111111111111111111111111111
+            <div class="cloth__cards__price">
+              <span class="cloth__cards__actual__price">$111</span>
+              <span class="cloth__cards__price__old">$111</span>
+            </div>
+            <button type="button" class="promotion__btn btn">
+              Buy now!&thinsp;<i
+                class="fa-solid fa-basket-shopping fa-2xs"
+              ></i>
+            </button>
+          </div>
+        </div>
+        <div class="cloth__cards__img cloth__cards__img-3">
+          <div class="cloth__cards__title">
+            <h1>Men's business suit</h1>
+          </div>
+          <div class="cloth__cards__desc">
+            1111111111111111111111111111111111111111
+            <div class="cloth__cards__price">
+              <span class="cloth__cards__actual__price">$111</span>
+              <span class="cloth__cards__price__old">$111</span>
+            </div>
+            <button type="button" class="promotion__btn btn">
+              Buy now!&thinsp;<i
+                class="fa-solid fa-basket-shopping fa-2xs"
+              ></i>
+            </button>
+          </div>
+        </div>
+        <div class="cloth__cards__img cloth__cards__img-4">
+          <div class="cloth__cards__title">
+            <h1>Men's business suit</h1>
+          </div>
+          <div class="cloth__cards__desc">
+            1111111111111111111111111111111111111111
+            <div class="cloth__cards__price">
+              <span class="cloth__cards__actual__price">$111</span>
+              <span class="cloth__cards__price__old">$111</span>
+            </div>
+            <button type="button" class="promotion__btn btn">
+              Buy now!&thinsp;<i
+                class="fa-solid fa-basket-shopping fa-2xs"
+              ></i>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Download app button -->
+    <section class="footer__top-background">
+      <div class="footer__top-box container">
+        <h1>
+          <i class="fa-solid fa-download fa-xs"></i>
+          Download Our Application
+        </h1>
+        <button type="button" class="footer__top-btn btn">
+          Download &thinsp;<i class="fa-solid fa-download"></i>
+        </button>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="container">
+      <div class="footer__contacts mobile">
+        <a href="#"
+          ><img src="../Logo/Logo.png" class="footer__logo" alt="Logo" />
+        </a>
+        <div class="footer__email">
+          <h2>
+            <i class="fa-solid fa-envelope" style="color: #709cbd"></i>
+            eeeeee@gmail.com
+          </h2>
+        </div>
+        <div class="footer__site">
+          <h2>
+            <i
+              class="fa-solid fa-globe fa-rotate-270"
+              style="color: #5d2eea"
+            ></i>
+            www.ddddd.com
+          </h2>
+        </div>
+      </div>
+      <div class="footer__social mobile">
+        <h1><i class="fa-solid fa-share fa-2xs"></i> Social handles</h1>
+        <div class="footer__social__list">
+          <ul>
+            <li>
+              <a href="#"
+                ><i
+                  class="fa-brands fa-facebook fa-fade fa-sm"
+                  style="color: #014bcb"
+                ></i>
+                Facebook</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i
+                  class="fa-brands fa-twitter fa-fade fa-sm"
+                  style="color: #74c0fc"
+                ></i>
+                Twitter</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i
+                  class="fa-brands fa-instagram fa-fade fa-sm"
+                  style="color: #d232c5"
+                ></i>
+                Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__box">
+        <div class="footer__contacts pc">
+          <a href="#"
+            ><img src="../Logo/Logo.png" class="footer__logo" alt="Logo" />
+          </a>
+          <div class="footer__email">
+            <h2>
+              <i class="fa-solid fa-envelope" style="color: #709cbd"></i>
+              eeeeee@gmail.com
+            </h2>
+          </div>
+          <div class="footer__site">
+            <h2>
+              <i
+                class="fa-solid fa-globe fa-rotate-270"
+                style="color: #5d2eea"
+              ></i>
+              www.ddddd.com
+            </h2>
+          </div>
+        </div>
+        <div class="footer__categories">
+          <h1><i class="fa-solid fa-list fa-2xs"></i> Our categories</h1>
+          <div class="footer__categories__list">
+            <ul>
+              <li><a href="#">Clothes</a></li>
+              <li><a href="#">Accessories</a></li>
+              <li><a href="#">Shoes</a></li>
+              <li><a href="#">Watches</a></li>
+              <li><a href="#">Jewelry</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__info">
+          <h1>
+            <i class="fa-solid fa-circle-info fa-2xs"></i> Information
+          </h1>
+          <div class="footer__info__list">
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Delivery</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__links">
+          <h1><i class="fa-solid fa-link fa-2xs"></i> Useful links</h1>
+          <div class="footer__links__list">
+            <ul>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__social pc">
+          <h1><i class="fa-solid fa-share fa-2xs"></i> Social handles</h1>
+          <div class="footer__social__list">
+            <ul>
+              <li>
+                <a href="#"
+                  ><i
+                    class="fa-brands fa-facebook fa-fade fa-sm"
+                    style="color: #014bcb"
+                  ></i>
+                  Facebook</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i
+                    class="fa-brands fa-twitter fa-fade fa-sm"
+                    style="color: #74c0fc"
+                  ></i>
+                  Twitter</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i
+                    class="fa-brands fa-instagram fa-fade fa-sm"
+                    style="color: #d232c5"
+                  ></i>
+                  Instagram</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      // Функция для показа/скрытия меню
+      function toggleMenu() {
+        document.querySelector(".dropdown").classList.toggle("show");
+      }
+
+      // Закрыть меню при клике вне его
+      window.onclick = function (event) {
+        if (!event.target.matches("button")) {
+          let dropdowns = document.querySelectorAll(".dropdown");
+          dropdowns.forEach(function (dropdown) {
+            dropdown.classList.remove("show");
+          });
+        }
+      };
+    </script>
+  </body>
+</html>

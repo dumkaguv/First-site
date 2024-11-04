@@ -1,0 +1,1095 @@
+/* Reset CSS styles Start */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+/* Reset CSS styles END */
+
+/* GLOBAL SETTINGS Start */
+.background__image.login {
+  margin-top: -78px;
+}
+
+::-webkit-scrollbar {
+  width: 12px; /* Ширина скроллбара */
+  height: 12px; /* Высота скроллбара (для горизонтального скролла) */
+}
+
+/* Стиль ползунка скроллбара */
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Цвет ползунка */
+  border-radius: 10px; /* Закругление ползунка */
+}
+
+/* Стиль заднего фона скроллбара */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Цвет заднего фона */
+}
+
+/* При наведении мыши на ползунок */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Цвет ползунка при наведении */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  color: hsla(0, 0%, 100%, 1);
+  opacity: 1;
+  background-color: hsla(34.5, 0.1%, 10.3%);
+}
+
+p {
+  margin-top: 10px;
+  opacity: 0.7;
+}
+
+h1 {
+  font-size: 26px;
+  opacity: 0.9;
+}
+
+h2 {
+  font-size: 20px;
+  opacity: 0.85;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1220px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 165px;
+  height: 40px;
+
+  font-weight: 600;
+  font-size: inherit;
+
+  border-radius: 5px;
+  border: 0;
+
+  background-color: #f6762c;
+  opacity: 0.9;
+  cursor: pointer;
+
+  transition: 0.8s;
+}
+
+/* GLOBAL SETTINGS END */
+
+/* Header Start */
+.header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.header__logo {
+  background: none;
+  width: 85px;
+  height: 60px;
+}
+
+.header__list {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin-top: 15px;
+}
+
+.header__item.mobile {
+  display: none;
+}
+
+.header__item {
+  opacity: 0.7;
+}
+
+.fa-solid.fa-caret-down.fa-xs {
+  vertical-align: text-bottom;
+  margin-bottom: 4px;
+}
+
+.active {
+  /*active button */
+  opacity: 0.9;
+}
+
+.header__button {
+  margin-top: 10px;
+}
+
+/* Header dropdown Start */
+.header__dropdown {
+  display: none;
+  position: absolute;
+  border-radius: 5px;
+  opacity: 1;
+  background-color: #f1f1f1;
+  min-width: 120px;
+  align-items: center;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.header__dropdown-item a{
+  color: black;
+  padding: 16px;
+  border-bottom: 1px solid rgba(164, 164, 164, 0.508);
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+/* Header dropdown END */
+
+/* Header END */
+
+/* Catalog Start */
+.catalog__container {
+  display: inline-flex;
+}
+
+.catalog__btn {
+  position: relative;
+  z-index: 1;
+  width: 160px;
+  margin-top: 20px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  border-radius: 5px;
+  margin-top: 5px;
+  opacity: 1;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  align-items: center;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 2;
+}
+
+/* Стили элементов внутри меню */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(164, 164, 164, 0.508);
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+/* Показываем меню при активации */
+.show .dropdown-content {
+  display: block;
+}
+
+/* Catalog END */
+
+/* Main Start */
+.background__image {
+  background-image: url("../Images/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  position: relative;
+}
+
+.main {
+  margin-top: -148px;
+}
+
+/* SubHeader Start */
+.subheader__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+
+  margin: 0 auto;
+  padding-top: 320px;
+}
+
+.subheader__text {
+  max-width: 580px;
+}
+
+.subheader__subtitle {
+  opacity: 1;
+}
+
+.subheader__title {
+  opacity: 1;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  padding-bottom: 35px;
+}
+
+.subheader__description {
+  opacity: 0.8;
+}
+
+.subheader__btn {
+  margin-top: 25px;
+}
+/* SubHeader END */
+
+/* Cloth cards Start */
+.cloth__cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.cloth__card__box {
+  width: 300px;
+  height: 100%;
+  background-color: hsla(34.5, 0.1%, 18.3%);
+  border-radius: 10px;
+}
+
+.cloth__card__text {
+  margin: 20px 20px 20px 20px;
+  text-align: center;
+}
+
+.cloth__card__img img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+
+  border-radius: 10px;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+/*
+.cloth__card__img img:hover {
+  opacity: 0.7;
+  border: 2px solid #fff;
+}
+*/
+
+/* Cloth cards END */
+
+/* Promotion Start */
+
+.promotion__background {
+  background-color: hsla(34.5, 0.1%, 18.3%);
+}
+
+.promotion__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.promotion__big__photo {
+  width: 450px;
+  height: 600px;
+
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.promotion__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+}
+
+.promotion__price {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-end;
+  color: #ff6f1c;
+  opacity: 1;
+}
+
+.promotion__price__old {
+  opacity: 0.4;
+  font-size: 14px;
+  text-decoration: line-through;
+}
+
+.promotion__btn {
+  margin-top: 15px;
+}
+
+/* Promotion END */
+
+/* Cloth cards Start */
+
+.cloth__cards__subfooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 15px 20px;
+  flex-wrap: wrap;
+  align-items: stretch;
+  padding-top: 180px;
+  padding-bottom: 180px;
+}
+
+.cloth__cards__img {
+  width: 49%;
+  height: 450px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.cloth__cards__img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  filter: brightness(0.6);
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.cloth__cards__img-1 {
+  background-image: url("../Images/1.jpg");
+}
+
+.cloth__cards__img-2 {
+  background-image: url("../Images/2.jpg");
+}
+
+.cloth__cards__img-3 {
+  background-image: url("../Images/3.jpg");
+}
+
+.cloth__cards__img-4 {
+  background-image: url("../Images/4.jpg");
+}
+
+.cloth__cards__title,
+.cloth__cards__desc {
+  position: relative;
+  z-index: 2;
+  max-width: 270px;
+  padding-left: 30px;
+}
+
+.cloth__cards__title {
+  padding-top: 110px;
+  opacity: 1;
+}
+
+.cloth__cards__desc {
+  padding-top: 20px;
+  max-width: 210px;
+  opacity: 0.9;
+  overflow-wrap: break-word;
+}
+
+.cloth__cards__price {
+  margin-top: 10px;
+  position: relative;
+  color: #ff650c;
+  z-index: 3;
+}
+
+.cloth__cards__price__old {
+  opacity: 0.6;
+  font-size: 14px;
+  text-decoration: line-through;
+}
+
+.cloth__cards__btn {
+  opacity: 1;
+  margin-top: 20px;
+}
+
+/* Cloth cards END */
+
+/* Main END */
+
+/* Footer Start */
+
+.footer__contacts.mobile {
+  display: none;
+}
+
+.footer__social.mobile {
+  display: none;
+}
+
+.footer__top-background {
+  background-color: hsla(34.5, 0.1%, 18.3%);
+}
+
+.footer__top-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 300px;
+}
+
+.footer__top-box h1 {
+  font-size: 40px;
+}
+
+.footer__box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: space-between;
+
+  padding-top: 200px;
+  padding-bottom: 15px;
+}
+
+.footer__contacts,
+.footer__categories,
+.footer__info,
+.footer__links,
+.footer__social {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.footer__logo {
+  background: none;
+  width: 85px;
+  height: 60px;
+}
+
+.footer__email {
+  padding-top: 25px;
+}
+
+.footer__categories__list,
+.footer__info__list,
+.footer__links__list,
+.footer__social__list {
+  padding-top: 10px;
+  opacity: 0.8;
+  line-height: 2;
+}
+
+/* Footer END */
+
+/* Adaptation */
+/* Для кнопок */
+@media (hover: hover) {
+  .btn:hover {
+    background-color: #f39661;
+    opacity: 1;
+  }
+}
+
+@media (hover: none) {
+  .btn:active {
+    background-color: #f6762c;
+    opacity: 0.9;
+  }
+}
+
+/* Для изображений в карточках */
+@media (hover: hover) {
+  .cloth__card__img img:hover {
+    opacity: 0.7;
+    border: 2px solid #fff;
+  }
+}
+
+@media (hover: none) {
+  .cloth__card__img img:active {
+    opacity: 1;
+    border: 2px solid #fff;
+  }
+}
+
+/* Показываем выпадающее меню при наведении */
+@media (hover: hover) {
+  .header__item:hover .header__dropdown {
+    display: block;
+  }
+}
+
+/* Для мобильных устройств, показываем меню при клике */
+@media (hover: none) {
+  .header__item a:focus + .header__dropdown {
+    display: block;
+  }
+}
+
+/* Стили для основного пункта меню */
+@media (hover: hover) {
+  .header__item:hover {
+    opacity: 1;
+    transition: 0.4s ease-in-out;
+  }
+}
+
+@media (hover: none) {
+  .header__item:active {
+    opacity: 0.9;
+    transition: 0.4s ease-in-out;
+  }
+}
+
+/* Для элементов выпадающего списка */
+@media (hover: hover) {
+  .header__item .header__dropdown .header__dropdown-item:hover {
+    opacity: 0.7;
+    background-color: rgba(164, 164, 164, 0.508);
+    transition: 0.3s ease-in-out;
+  }
+}
+
+@media (hover: none) {
+  .header__item .header__dropdown a:active {
+    opacity: 1;
+    background-color: rgba(164, 164, 164, 0.508);
+    transition: 0.3s ease-in-out;
+  }
+}
+
+/* Для элементов в выпадающем меню (dropdown-content) */
+@media (hover: hover) {
+  .dropdown-content a:hover {
+    opacity: 0.7;
+    background-color: rgba(164, 164, 164, 0.508);
+    transition: 0.3s ease-in-out;
+  }
+}
+
+@media (hover: none) {
+  .dropdown-content a:active {
+    opacity: 1;
+    background-color: rgba(164, 164, 164, 0.508);
+  }
+}
+
+@media (max-width: 1054px) {
+  .cloth__cards__img {
+    height: 380px;
+    width: 48.9%;
+  }
+
+  .cloth__cards__title {
+    padding-top: 85px;
+  }
+
+  .header__button {
+    display: none;
+  }
+
+  .header__nav {
+    margin: 0 auto;
+  }
+
+  .footer__box {
+    margin-top: 100px;
+  }
+
+  .footer__contacts.pc {
+    margin-top: -180px;
+  }
+
+  .footer__social {
+    order: 1;
+  }
+
+  .footer__categories {
+    margin-top: -220px;
+    gap: 15px;
+    order: 3;
+  }
+
+  .footer__categories__list {
+    margin-top: -14px;
+  }
+}
+
+@media (max-width: 940px) {
+  .cloth__cards {
+    padding-top: 105px;
+    padding-bottom: 105px;
+  }
+
+  .cloth__cards__subfooter {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .cloth__cards__img {
+    width: 48%;
+  }
+}
+
+@media (max-width: 900px) {
+  .header__item.pc {
+    display: none;
+  }
+
+  .header__item.mobile {
+    display: block;
+  }
+
+  .cloth__cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 835px) {
+  .footer__box {
+    margin-top: 0px;
+    padding-top: 0px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .footer__contacts.pc {
+    display: none;
+  }
+
+  .footer__contacts.mobile {
+    padding-top: 310px;
+    padding-bottom: 50px;
+    display: block;
+  }
+
+  .footer__contacts.mobile {
+    margin-top: -180px;
+  }
+
+  .footer__categories {
+    margin-top: 0px;
+    order: 1;
+  }
+
+  .footer__categories__list {
+    margin-top: 0px;
+  }
+
+  .footer__social.pc {
+    display: none;
+  }
+
+  .footer__social.mobile {
+    display: block;
+    margin-top: -202px;
+    margin-left: 39%;
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 750px) {
+  .header__list {
+    gap: 25px;
+  }
+
+  .footer__top-box h1 {
+    font-size: 30px;
+  }
+
+  .footer__social.mobile {
+    margin-left: 38%;
+  }
+  .promotion__big__photo {
+    width: 350px;
+    height: 450px;
+  }
+}
+
+@media (max-width: 650px) {
+  .footer__box {
+    margin-top: 100px;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer__contacts.pc {
+    margin-top: 0px;
+    display: block;
+  }
+
+  .footer__contacts.mobile {
+    display: none;
+  }
+
+  .footer__social.pc {
+    display: block;
+  }
+
+  .footer__social.mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 630px) {
+  .main {
+    margin-top: -250px;
+  }
+
+  .header__logo-link {
+    height: 60px;
+  }
+
+  .catalog__btn {
+    margin-top: -140px;
+  }
+
+  .header__dropdown {
+    margin-left: 110px;
+    margin-top: -20px;
+  }
+
+  .header__list {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .subheader__subtitle {
+    font-size: 16px;
+    opacity: 1;
+  }
+
+  .subheader__title {
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+
+  .subheader__text {
+    padding-top: 60px;
+    font-size: 16px;
+  }
+
+  .cloth__cards__title h1 {
+    max-width: 200px;
+    font-size: 22px;
+  }
+
+  .cloth__cards__desc {
+    max-width: 160px;
+  }
+
+  .footer__top-box h1 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .promotion__description h1 {
+    font-size: 22px;
+  }
+
+  .promotion__description h2 {
+    font-size: 18px;
+  }
+
+  .cloth__cards__title h1 {
+    font-size: 18px;
+  }
+
+  .cloth__cards__desc {
+    font-size: 16px;
+  }
+
+  .promotion__container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .promotion__big__photo {
+    width: 260px;
+    height: 350px;
+  }
+
+  .footer__top-box h1 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 530px) {
+  .cloth__cards__subfooter {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cloth__cards__img {
+    width: 78%;
+  }
+}
+
+@media (max-width: 500px) {
+  .header__item.info {
+    order: 2;
+  }
+
+  .header__dropdown {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+
+  .subheader__text {
+    padding-top: 0px;
+  }
+
+  .promotion__description h1 {
+    font-size: 18px;
+  }
+
+  .promotion__description h2 {
+    font-size: 15px;
+  }
+
+  .promotion__big__photo {
+    width: 200px;
+    height: 290px;
+  }
+
+  .footer__top-box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer__top-box h1 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 500px) {
+  .promotion__description h1 {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .promotion__description h2 {
+    font-size: 14px;
+  }
+
+  .promotion__btn {
+    width: 140px;
+  }
+
+  .footer__top-box h1 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 380px) {
+  .catalog__btn {
+    width: 120px;
+  }
+
+  .dropdown-content {
+    min-width: 120px;
+  }
+
+  .promotion__btn {
+    width: 110px;
+  }
+
+  .cloth__cards__img {
+    width: 95%;
+  }
+}
+
+@media (max-width: 335px) {
+
+  .subheader__text {
+    margin-top: -30px;
+    font-size: 16px;
+  }
+  .promotion__big__photo {
+    width: 150px;
+    height: 220px;
+  }
+}
+
+
